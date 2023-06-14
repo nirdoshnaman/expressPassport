@@ -11,8 +11,16 @@ app.get('/login', (req, res) => {
     res.render('login.ejs', {name: 'Naman'})
 })
 
+app.post('/login', (req, res) =>{
+    res.send('post login')
+})
+
 app.get('/register', (req, res) => {
     res.render('register.ejs', {name: 'Naman'})
+})
+
+app.post('/register', (req, res) =>{
+    res.send('post register')
 })
 
 
